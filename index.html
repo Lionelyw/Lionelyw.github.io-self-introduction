@@ -1,13 +1,22 @@
+<!DOCTYPE>
 <html>
 <head>
-<title>hello browser</title>
+  <meta charset="utf-8" />
+  <title>内部样式表和外部样式表的优先级</title>
+    <!--内部部样式表-->
+  <style type="text/css">
+    p{
+      color: blue;
+    }
+  </style>
+  <!--外部样式表-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" /> 
 </head>
 <body>
-    <h1>my name is wzy</h1>
-    <style>
-        p{color:green;
-        
-        }
-    </style>
-</body>
+     <p>我是p段落</p>
+     <div>我是div</div>
+     <ol>
+         <li>1111</li>
+         <li>2222</li>
+     </ol>
 </html>
